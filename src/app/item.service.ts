@@ -5,7 +5,7 @@ import { map } from "rxjs/operators";
 
 @Injectable()
 export class ItemService {
-  total = 1000;
+  total = 10000;
   refreshCounter = 0;
 
   getItems(items: number = 1000): Observable<Array<IItem>> {

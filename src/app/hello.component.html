@@ -1,10 +1,7 @@
 <p>{{items.length}} Items</p>
-<p>
-	<button (click)="delayedRefresh()">Refresh after 5sec</button>
-
-  <button (click)="createItemClasses()">Classes after 5sec</button>
-  <button (click)="createIItemInterface()">Interface after 5sec</button>
-</p>
+<div><button (click)="delayedRefresh()">Refresh after 5sec</button></div>
+<div><button (click)="createItemClasses()">Classes after 5sec</button></div>
+<div><button (click)="createIItemInterface()">Interface after 5sec</button></div>
 <div *ngFor="let item of items" trackBy=trackByFunction>
 	<data-item [data]="item"></data-item>
 </div>

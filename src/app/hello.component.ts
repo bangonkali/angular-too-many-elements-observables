@@ -52,13 +52,13 @@ export class HelloComponent implements OnDestroy, OnInit {
     // Manually set interval for getting data.
     while (this.shouldRefresh) {
       await Promise.delay(5000);
-      await this.refresh();
+      this.refresh();
     }
   }
 
   async delayedRefresh() {
     await Promise.delay(5000);
-    await this.refresh();
+    this.refresh();
   }
 
   refresh() {
